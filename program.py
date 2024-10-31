@@ -13,7 +13,6 @@ def product_reduce(data):
 def total_sales(data):
     data['sales'] = data['price'] * data['quantity']
     return data
-    # Can be left for last data = data.drop(columns=['price','quantity'])
     # Can reorder new_order = ['total_sales', 'product', 'price', 'quantity'
 
 
