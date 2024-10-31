@@ -1,0 +1,6 @@
+
+body {
+    margin: 0; /* Remove default body margin */
+    font-family: 'Tahoma', sans-serif; /* Set global font family */
+    background-color: #1f2630;
+}
