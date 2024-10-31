@@ -10,7 +10,6 @@ app = Dash(__name__)
 colors = {
     'main' : '#1f2630',
     'secondary' : '#252e3f',
-    'text': '#fefefe',
     'secondText': "#2cfec1"
 }
 
@@ -27,7 +26,7 @@ def gen_fig(data):
     return fig;
 
 
-visulation = dcc.Graph(
+visulization = dcc.Graph(
     id="visualization",
     figure=gen_fig(data),
     
@@ -72,7 +71,7 @@ def update_graph(region):
 app.layout = html.Div(
     [
         header,
-        visulation,
+        visulization,
         region_picker
     ],
     style={
@@ -83,7 +82,7 @@ app.layout = html.Div(
 )
 
 if __name__ == '__main__':
-    app.run(debug=True)
-    #app.run_server()
+    #app.run(debug=True)
+    app.run_server()
 
 
